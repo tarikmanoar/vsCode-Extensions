@@ -1,0 +1,84 @@
+{
+	"name": "vscode-laravel-assist",
+	"displayName": "Laravel Assist",
+	"description": "Laravel development auxiliary extension",
+	"version": "0.1.7",
+	"publisher": "tiansin",
+	"icon": "assets/icon/icon.png",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:php",
+		"onLanguage:blade"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tiansin/vscode-laravel-assist"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.updateIndexing",
+				"title": "Update Assist Indexing",
+				"category": "Laravel"
+			}
+		],
+		"configuration": [
+			{
+				"title": "Laravel Assist Configure",
+				"properties": {
+					"LaravelAssist.mix-manifest": {
+						"type": "string",
+						"default": "public/mix-manifest.json",
+						"description": "Configure the mix-manifest relative path."
+					},
+					"LaravelAssist.pathControllers": {
+						"type": "array",
+						"default": [
+							"app/Http/Controllers"
+						],
+						"description": "Configure additional controller path."
+					},
+					"LaravelAssist.gotoController": {
+						"type": "string",
+						"default": "DocumentLink",
+						"enum": [
+							"Definition",
+							"DocumentLink"
+						],
+						"description": "Configure controller jumps to use definitions or document links."
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"php-parser": "^3.0.0-prerelease.8",
+		"which": "^1.3.1"
+	},
+	"__metadata": {
+		"id": "dfd8ae7b-88ab-4c82-bfe2-a4e59aaca087",
+		"publisherId": "26a299cf-6924-4a9c-ad46-d829aadce1da",
+		"publisherDisplayName": "tiansin"
+	}
+}

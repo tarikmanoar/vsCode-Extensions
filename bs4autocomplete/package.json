@@ -1,0 +1,34 @@
+{
+    "name": "bs4autocomplete",
+    "displayName": "bs4autocomplete",
+    "description": "Bootstrape 4 Autocomplete like sumlime text 3",
+    "version": "1.0.0",
+    "publisher": "Manoar",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/tarikmanoar/tarikmanoar.github.io"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

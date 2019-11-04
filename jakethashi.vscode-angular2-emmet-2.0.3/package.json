@@ -1,0 +1,68 @@
+{
+	"name": "vscode-angular2-emmet",
+	"displayName": "Angular 2 TypeScript Emmet",
+	"description": "Support zen-coding syntax for Angular 2 typescript files.",
+	"icon": "images/angular-logo.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"version": "2.0.3",
+	"publisher": "jakethashi",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jakethashi/vscode-angular2-emmet.git"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://raw.githubusercontent.com/jakethashi/vscode-angular2-emmet/master/LICENSE.md"
+		}
+	],
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"keywords": [
+		"Angular 2",
+		"TypeScript",
+		"Emmet",
+		"Zen-coding"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"keybindings": [
+			{
+				"command": "extension.emmetMe",
+				"key": "tab",
+				"when": "editorTextFocus && editorLangId == 'typescript' && !suggestWidgetVisible && !inSnippetMode"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.1.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"dependencies": {
+		"emmet": "^1.3.2"
+	},
+	"__metadata": {
+		"id": "b1b80ce3-c4e0-42a5-b7c5-70317232f899",
+		"publisherId": "2dc32422-b544-4c09-b3f8-523f7b7d4ae6",
+		"publisherDisplayName": "jakethashi"
+	}
+}
