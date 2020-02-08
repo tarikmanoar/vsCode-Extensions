@@ -1,0 +1,77 @@
+{
+    "Class Output": {
+        "prefix": "cls",
+        "body": [
+            "class ${1:ClassName}{",
+            "    public function ${2:FunctionName}(){",
+            "        ${0:}",
+            "    }",
+            "}"
+        ],
+        "description": "Class Output"
+    },
+    "Public Function Output": {
+        "prefix": "pf",
+        "body": [
+            "public function ${1:FunctionName}(){",
+            "    ${0:}",
+            "}"
+        ],
+        "description": "Function Output"
+    },
+    "Protected Function Output": {
+        "prefix": "ppf",
+        "body": [
+            "protected function ${1:FunctionName}(){",
+            "    ${0:}",
+            "}"
+        ],
+        "description": "Protected Function Output"
+    },
+    "Try Catch ": {
+        "prefix": "tc",
+        "body": [
+            "try {",
+            "    ${1:#Code}${0:}",
+            "} catch (\\Exception $$e) {",
+            "    ${2:#$$e->getMessage();}",
+            "}"
+        ],
+        "description": "Try Catch "
+    },
+    "Echo New Message": {
+        "prefix": "echo",
+        "body": [
+            "echo ${0:HELLO};"
+        ],
+        "description": "Echo New Message"
+    },
+    "Php Syntax": {
+        "prefix": "php",
+        "body": [
+            "<?php ${0:} ?>"
+        ],
+        "description": "Print Php Syntax"
+    },
+    "Protected Guard Php Syntax": {
+        "prefix": "pg",
+        "body": [
+            "protected $$guarded = [];"
+        ],
+        "description": "Print Php PG Function"
+    },
+    "Array Key Value Php Syntax": {
+        "prefix": "=>",
+        "body": [
+            "'$1' => '$2',"
+        ],
+        "description": "Array Key Value"
+    },
+    "Return User Data Value Php Syntax": {
+        "prefix": "ret",
+        "body": [
+            "return $1;$0"
+        ],
+        "description": "Return All @ Array Key Value"
+    }
+}

@@ -226,6 +226,7 @@ let ApiController = class ApiController {
             const actionName = request.param('name');
             const value = decodeURIComponent(request.query.value);
             const logEntry = request.body;
+            const gitService = yield this.serviceContainer.get(types_5.IGitServiceFactory).createGitService(workspaceFolder, workspaceFolder);
             switch (actionName) {
                 default:
                     this.commandManager.executeCommand('git.commit.doSomething', new types_3.CommitDetails(workspaceFolder, currentState.branch, logEntry));
@@ -238,6 +239,12 @@ let ApiController = class ApiController {
                     break;
                 case 'newbranch':
                     this.commandManager.executeCommand('git.commit.createBranch', new types_3.CommitDetails(workspaceFolder, currentState.branch, logEntry), value);
+                    break;
+                case 'reset_hard':
+                    yield gitService.reset(logEntry.hash.full, true);
+                    break;
+                case 'reset_soft':
+                    yield gitService.reset(logEntry.hash.full);
                     break;
             }
         });

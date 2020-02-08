@@ -426,6 +426,11 @@ let Git = class Git {
             yield this.exec('cherry-pick', hash);
         });
     }
+    reset(hash, hard = false) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.exec('reset', hard ? '--hard' : '--soft', hash);
+        });
+    }
     checkout(hash) {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.exec('checkout', hash);

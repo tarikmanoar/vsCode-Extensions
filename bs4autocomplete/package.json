@@ -26,8 +26,16 @@
                 "path": "./snippets/snippets.json"
             },
             {
+                "language": "php",
+                "path": "./snippets/php.json"
+            },
+            {
                 "language": "css",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "js",
+                "path": "./snippets/js.json"
             }
         ]
     }
