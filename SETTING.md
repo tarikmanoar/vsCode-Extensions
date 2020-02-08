@@ -1,4 +1,5 @@
 {
+#User Setting
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
