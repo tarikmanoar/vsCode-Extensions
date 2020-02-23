@@ -1,5 +1,5 @@
 {
-#User Setting
+
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
@@ -15,9 +15,15 @@
     "editor.fontLigatures": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
+    
+    
+    
     // "editor.formatOnSave": true,
     //PHP CS Fixer
     // "php-cs-fixer.onsave": true,
+    
+    
+    
     "php-cs-fixer.config": "/home/manoar/.vscode/.php_cs",
     "php-cs-fixer.executablePath": "php-cs-fixer",
     "php-cs-fixer.rules": "@PSR2",
