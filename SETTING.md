@@ -1,5 +1,4 @@
 {
-
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
@@ -15,17 +14,11 @@
     "editor.fontLigatures": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    
-    
-    
     // "editor.formatOnSave": true,
     //PHP CS Fixer
     // "php-cs-fixer.onsave": true,
-    
-    
-    
     "php-cs-fixer.config": "/home/manoar/.vscode/.php_cs",
-    "php-cs-fixer.executablePath": "php-cs-fixer",
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
     "php-cs-fixer.rules": "@PSR2",
     "php-cs-fixer.allowRisky": false,
     "php-cs-fixer.pathMode": "override",
@@ -54,6 +47,17 @@
     },
     "path-intellisense.extensionOnImport": true,
     "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "window.zoomLevel": 0,
+    "liveServer.settings.donotVerifyTags": true,
+    "php-cs-fixer.lastDownload": 1582118278543,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[scss]": {
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
 }
