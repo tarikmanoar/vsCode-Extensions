@@ -60,4 +60,21 @@
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            // "extensionName": ".min.css",
+            "savePath": "/css",
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "css.remoteStyleSheets": [
+        "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css",
+    ],
+    "css.fileExtensions": [
+        "css",
+        "scss"
+    ],
+    // "autoprefixer.formatOnSave": true,
+
 }
