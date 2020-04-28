@@ -16,8 +16,8 @@
     "editor.formatOnPaste": true,
     // "editor.formatOnSave": true,
     //PHP CS Fixer
-    // "php-cs-fixer.onsave": true,
-    "php-cs-fixer.config": "/home/manoar/.vscode/.php_cs",
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.config": "${extensionPath}/.php_cs",
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
     "php-cs-fixer.rules": "@PSR2",
     "php-cs-fixer.allowRisky": false,
@@ -51,7 +51,7 @@
     },
     "window.zoomLevel": 0,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1582118278543,
+    "php-cs-fixer.lastDownload": 1588071584827,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "[scss]": {
@@ -75,6 +75,9 @@
         "css",
         "scss"
     ],
-    // "autoprefixer.formatOnSave": true,
+    "autoprefixer.formatOnSave": true,
+    "launch": {
+    
+    },
 
 }
