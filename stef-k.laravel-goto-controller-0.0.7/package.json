@@ -1,0 +1,65 @@
+{
+	"name": "laravel-goto-controller",
+	"displayName": "laravel-goto-controller",
+	"description": "Alt + click to navigate from a route to a respective controller file",
+	"version": "0.0.7",
+	"publisher": "stef-k",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"galleryBanner": {
+		"color": "#FF544A",
+		"theme": "light"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"icon": "images/icon.png",
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.33"
+	},
+	"dependencies": {
+		"n-readlines": "^1.0.0"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stef-k/laravel-goto-controller.git"
+	},
+	"bugs": {
+		"url": "https://github.com/stef-k/laravel-goto-controller/issues"
+	},
+	"homepage": "https://github.com/stef-k/laravel-goto-controller/blob/master/README.md",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Laravel goto controller configuration",
+			"properties": {
+				"laravel_goto_controller.pathController": {
+					"type": "string",
+					"default": "/app/Http/Controllers",
+					"description": "Root path to the controllers folder"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "f8a1bc85-dce8-4e51-a623-a40bde56fc8b",
+		"publisherId": "d5737aba-290d-4404-a0f2-9012f1c4a571",
+		"publisherDisplayName": "stef-k"
+	}
+}
